@@ -4,11 +4,11 @@ public class CheckPlaindrome1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-String isPalindrome=checkPalindrome("abc");
+boolean isPalindrome=checkPalindrome("abc");
 System.out.println(isPalindrome);
 	}
 	
-	public static String checkPalindrome(String inputString) {
+	public static boolean checkPalindrome(String inputString) {
 		
 		String finalString="";
 		
@@ -19,12 +19,11 @@ System.out.println(isPalindrome);
 		
 		if(finalString.equalsIgnoreCase(inputString))
 		{
-		return inputString+ " is a palindrome";
+		return true;
 		}
-		else
-		{
-		return inputString+ " is not a palindrome";
-		}
+		
+		return false;
+		
 	}
 
 }
